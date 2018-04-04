@@ -3,5 +3,6 @@
   User.create!(name: Faker::Name.name,
                email: Faker::Internet.email,
                password: 'foobar',
-               password_confirmation: 'foobar')
+               password_confirmation: 'foobar',
+               description: Faker::Dune.quote)
 end
