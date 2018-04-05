@@ -6,3 +6,9 @@
                password_confirmation: 'foobar',
                description: Faker::Dune.quote)
 end
+
+# Events
+20.times do |nn|
+  Event.create!(name: "Event #{nn + 1}",
+                date: rand(Date.today..Date.today.next_month))
+end
